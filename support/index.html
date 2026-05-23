@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support - Apodim's Software</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav style="font-family:verdana">
-    <a href="/index.html"><u>Home</u></a>
-    <a href="/blog.html">Blog</a>
-    <a href="/users.html">Members</a>
-    <a href="/software.html">Projects</a>
-    <a href="/support.html">Support</a>
-    <a href="/nidos-keys.html">NidOS Activation Keys</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Apodim</div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/users.html">Members</a></li>
+        <li><a href="/software.html">Projects</a></li>
+        <li><a href="/support/index.html" class="active">Support</a></li>
+        <li><a href="/nidos-keys.html">NidOS Keys</a></li>
+      </ul>
+    </div>
   </nav>
-  
-  <h1 style="font-family:verdana">Support page</font></h1>
 
-  <h3 style="font-family:verdana">Please select the topic related to your problem from the list:</h3>
+  <!-- Main Content -->
+  <section class="about-section">
+    <div class="container">
+      <h1 class="section-title">Support</h1>
+      <p class="section-description">Select the topic related to your problem to get help</p>
+    </div>
+  </section>
 
-  <ul>
-    <li><a href="/support/games.html">Game issues</li>
-    <li><a href="/support/discord.html">Discord server-related issues (user report, questions, etc.)</li>
-  </ul>
-  <script src="script.js"></script>
+  <!-- Support Topics -->
+  <section class="features-section">
+    <div class="container">
+      <div class="cards-grid">
+        <div class="card">
+          <h3>🎮 Game Issues</h3>
+          <p>Having trouble with one of our games? Find solutions for common game-related problems here.</p>
+          <p><a href="/support/games.html">Get Support</a></p>
+        </div>
+
+        <div class="card">
+          <h3>💬 Discord Server</h3>
+          <p>Questions about our Discord community? User reports or general inquiries? We're here to help.</p>
+          <p><a href="/support/discord.html">Get Support</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Apodim's Software. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 
 </html>

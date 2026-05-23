@@ -1,28 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - Apodim's Software</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav style="font-family:verdana">
-    <a href="index.html">Home</a>
-    <a href="blog.html"><u>Blog</u></a>
-    <a href="users.html">Members</a>
-    <a href="software.html">Projects</a>
-    <a href="nidos-keys.html">NidOS Activation Keys</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Apodim</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="users.html">Members</a></li>
+        <li><a href="software.html">Projects</a></li>
+        <li><a href="/support/index.html">Support</a></li>
+        <li><a href="nidos-keys.html">NidOS Keys</a></li>
+      </ul>
+    </div>
   </nav>
-  <p style="font-family:verdana"><font size="10">Blog</font></p>
-  <p style="font-family:verdana"><a href="posts/newsite.html">26/1/2025 by Apodim: Our new site</a></p>
-  <p style="font-family:Verdana"><a href="posts/tasc-has-now-its-dedicated-website.html">26/1/2025 by Apodim: TASC has now its dedicated website</a></p>
-  <p style="font-family:verdana"><a href="posts/tasc-schedule.html">26/1/2025 by Apodim: TASC Schedule</a></p>
-  <p style="font-family:verdana"><a href="posts/nidos6-changelog.html">15/2/2025 by Apodim: NidOS 6 - Changelog</a></p>
-  <p style="font-family:verdana"><a href="posts/greedy-drivers-2-discord-rich-presence-coming-soon.html">25/6/2025 by Apodim: Greedy Drivers 2 Discord Rich Presence Coming soon</a></p>
-  <p style="font-family:verdana"><a href="index.html">Back to main page</a></p>
+
+  <!-- Main Content -->
+  <section class="about-section">
+    <div class="container">
+      <h1 class="section-title">Blog</h1>
+      <p class="section-description">Latest news, updates, and announcements from Apodim's Software</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <section class="features-section">
+    <div class="container">
+      <div class="cards-grid">
+        <div class="card">
+          <h3>🌐 <a href="posts/greedy-drivers-2-discord-rich-presence-coming-soon.html">Greedy Drivers 2 Discord Rich Presence Coming Soon</a></h3>
+          <p>June 25, 2025 by Apodim</p>
+          <p>Exciting new Discord integration features are on the way for Greedy Drivers 2...</p>
+        </div>
+
+        <div class="card">
+          <h3>📋 <a href="posts/nidos6-changelog.html">NidOS 6 - Changelog</a></h3>
+          <p>February 15, 2025 by Apodim</p>
+          <p>Discover all the new features and improvements in NidOS 6...</p>
+        </div>
+
+        <div class="card">
+          <h3>📅 <a href="posts/tasc-schedule.html">TASC Schedule</a></h3>
+          <p>January 26, 2025 by Apodim</p>
+          <p>Check out the schedule for the upcoming TASC event...</p>
+        </div>
+
+        <div class="card">
+          <h3>🌐 <a href="posts/tasc-has-now-its-dedicated-website.html">TASC Has Now Its Dedicated Website</a></h3>
+          <p>January 26, 2025 by Apodim</p>
+          <p>TASC (The Apodim Software Conference) now has its own dedicated website...</p>
+        </div>
+
+        <div class="card">
+          <h3>🚀 <a href="posts/newsite.html">Our New Site</a></h3>
+          <p>January 26, 2025 by Apodim</p>
+          <p>Welcome to the brand new Apodim's Software website! We're excited to share our updated platform with you...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Apodim's Software. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 

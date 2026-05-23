@@ -1,41 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Game issues - Apodim's Software</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Issues Support - Apodim's Software</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav style="font-family:verdana">
-    <a href="/index.html">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/users.html">Members</a>
-    <a href="/software.html">Projects</a>
-    <a href="/nidos-keys.html">NidOS Activation Keys</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Apodim</div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/users.html">Members</a></li>
+        <li><a href="/software.html">Projects</a></li>
+        <li><a href="/support/index.html" class="active">Support</a></li>
+        <li><a href="/nidos-keys.html">NidOS Keys</a></li>
+      </ul>
+    </div>
   </nav>
-  
-  <p style="font-family:verdana">Game issues</font></p>
 
-  <h3>Fill out the following form in order to communicate with you.</h3>
-  <h4>WARNING! The email we will reply to you is: apodimapps@gmail.com  not another.</h4>
-  <form name="game-issue" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Describe your issue <input type="text" name="issue" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-  <script src="script.js"></script>
+  <!-- Main Content -->
+  <section class="about-section">
+    <div class="container">
+      <h1 class="section-title">Game Issues Support</h1>
+      <p class="section-description">Report game-related issues and get help from our support team</p>
+    </div>
+  </section>
+
+  <!-- Support Form Section -->
+  <section class="features-section">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <h2 class="section-title">Report a Game Issue</h2>
+        <p class="section-description" style="margin-bottom: 30px;">Fill out the form below to describe your game issue. We'll respond to: <strong>apodimapps@gmail.com</strong></p>
+        
+        <form name="game-issue" netlify style="background: rgba(255, 107, 0, 0.05); padding: 30px; border-radius: 8px;">
+          <div style="margin-bottom: 20px;">
+            <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;" />
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;" />
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="issue" style="display: block; margin-bottom: 8px; font-weight: bold;">Describe Your Issue:</label>
+            <textarea id="issue" name="issue" required rows="6" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Report</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Apodim's Software. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 
 </html>
